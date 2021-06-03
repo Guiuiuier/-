@@ -1,0 +1,104 @@
+* {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	body {
+		background: url("../images/bg.jpg") fixed;
+			background-color:#a5e3ff21;
+		margin:0 auto;
+	padding: 0px;
+	/*background: url(../picture/beijing.jpg) no-repeat;*/
+	background-position:  top center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: 100% 100%;
+	background-size: 100% 100%;
+		}
+
+
+.home,.home1,li,a,ul{
+		margin:0px;
+	padding: 0px;
+	text-decoration: none;
+	list-style: none;
+	font:normal 14px/1.5 tahoma,"Microsoft YaHei", Simsun, "Arial Unicode MS",Mingliu,Arial,Helvetica;
+
+	}
+			.home{
+	width: 100%;
+	height: 50px;
+	background: white;	
+	margin: 0 auto;
+	text-align: center;
+}
+.home a{
+	color:black;
+}
+.home li{
+	display:inline-block;
+	width:400px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	border: 0.5px solid;
+	border-color: rgb(230,230,230);
+}
+
+.home a:hover{
+	color: white;
+}
+
+
+.home1 li:hover{
+	background: rgb(90,122,234);
+}
+
+.topic{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+}
+.content{
+	text-align: center;
+	width: 320px;
+	height: 150px;
+	background-color: white;
+	margin: 0 auto;
+
+}
+.content textarea{
+	width: 300px;
+	height: 100px;
+	/*float: left;*/
+    margin-left: 0px;
+
+}
+
+.submit{
+	float: right;
+	padding-right:20px;
+
+}
+.title{
+	font-size: 10px;
+	margin-right: 195px;
+
+}
+
+.message{
+	width: 500px;
+	margin: 0 auto;
+    height: 100px;
+    background-color:pink;
+   margin-top: 50px;
+}
+
+
+.content1{
+	width: 500px;
+	height: 70px;
+	margin-top: 10px;
+}

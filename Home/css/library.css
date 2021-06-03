@@ -1,0 +1,1164 @@
+body,h1,h2,h3,li,a,ul {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    font: normal 14px/1.5 tahoma, "Microsoft YaHei", Simsun, "Arial Unicode MS", Mingliu, Arial, Helvetica;
+}
+
+body {
+    background-color: #a5e3ff21;
+    margin: 0 auto;
+    padding: 0px;
+    /*background: url(../picture/beijing.jpg) no-repeat;*/
+    background-position: top center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+/*开头部分*/
+
+.nov {
+    background-color: #ffffff;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.nov_center {
+    width: 100%;
+    height: 84px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.nov_center img {
+    width: 342px;
+    height: 84px;
+    float: left;
+}
+
+.nov_center_center {
+    width: 1191px;
+    height: 84px;
+    display: inline-block;
+}
+
+.nov_center_center li {
+    float: right;
+    width: 110px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.nov_center_center a {
+    color: rgb(90, 122, 234);
+}
+
+.nov_center_center a:hover {
+    text-decoration: underline;
+}
+
+.nov_center_center li a img {
+    height: 24px;
+    width: 24px;
+}
+
+/*开头部分结束*/
+
+/*HOME开始*/
+
+.home {
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home a {
+    color: black;
+}
+
+.home li {
+    display: inline-block;
+    width: 392px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 0.5px solid;
+    border-color: rgb(230, 230, 230);
+}
+
+.home a:hover {
+    color: white;
+}
+
+.active,
+.active1 {
+    background: rgb(90, 122, 234);
+    color: white;
+}
+
+.home1 li:hover {
+    background: rgb(90, 122, 234);
+}
+
+/*Home 部分结束*/
+
+/*CITY OF LIBRARIES 开始*/
+
+.city {
+    width: 1190px;
+    height: 144px;
+    margin: 20px auto auto auto;
+    background: url(../picture/wuzi.jpg);
+    margin-bottom: 20px;
+}
+
+.city li {
+    display: inline-block;
+    padding-left: 70px;
+    height: 40px;
+}
+
+.city ul {
+    padding-left: 230px;
+    padding-top: 20px;
+}
+
+.city a {
+    color: white;
+}
+
+.city a:hover {
+    text-decoration: underline;
+}
+
+.search {
+    width: 690px;
+    height: 60px;
+    padding-top: 20px;
+}
+
+input {
+    width: 541px;
+    height: 46px;
+    border-radius: 6px;
+    font-size: 17px;
+    margin-left: 230px;
+    padding-left: 20px;
+    float: left;
+}
+
+.sousuo img {
+    height: 51px;
+}
+
+/*CITY部分结束*/
+
+/*主题内容开始*/
+
+.content {
+    width: 1190px;
+    height: 310px;
+    margin: 0 auto;
+    /*	*/
+}
+
+/*内容图片滑动代码*/
+
+/*不超过div盒子图片滑动时*/
+
+/* 图片转换*/
+
+.circulation {
+    width: 890px;
+    height: 298px;
+    overflow: hidden;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.circulation:hover .slide:after,
+.circulation:hover .counter,
+.circulation:hover .slide:before {
+    opacity: 1
+}
+
+.slide {
+    float: right;
+    position: absolute;
+    z-index: 0;
+    width: 888px;
+    height: 295px;
+    background-color: #eee;
+    text-align: center;
+    transition: opacity .4s;
+    opacity: 1
+}
+
+.slide img {
+    width: 888px;
+    height: 295px;
+    position: relative;
+}
+
+/*鼠标画上去阴影外加标题*/
+
+.slide:before {
+    content: attr(annot);
+    display: block;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color: rgba(255, 255, 255, .9);
+    font-size: 14px;
+    font-weight: 300;
+    z-index: 12;
+    opacity: 0;
+    transition: opacity .3s;
+    text-shadow: 0 0 1px #000
+}
+
+/*图片内容描述*/
+
+.slide:after {
+    content: attr(slide);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    transition: opacity .3s;
+    width: 100%;
+    height: 80px;
+    opacity: 0;
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    text-align: left;
+    text-indent: 549px;
+    line-height: 101px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, .9);
+    text-shadow: 0 0 1px #000
+}
+
+;
+.counter {
+    position: absolute;
+    bottom: 20px;
+    right: 1px;
+    height: 20px;
+    width: 60px;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    line-height: 21px;
+    font-size: 13px;
+    opacity: 0;
+    transition: opacity .3s
+}
+
+.faux-ui-facia {
+    /*margin: 0 auto;*/
+    /*padding: 0 auto;
+		top:0;right:0;*/
+    float: left;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 0;
+    z-index: 10;
+    height: 295px;
+    width: 900px;
+    opacity: 0;
+    cursor: pointer
+}
+
+.faux-ui-facia:checked {
+    z-index: 8
+}
+
+.faux-ui-facia:checked+.slide {
+    opacity: 0
+}
+
+.faux-ui-facia:checked:nth-child(1):checked {
+    z-index: 9
+}
+
+.faux-ui-facia:nth-child(1):checked {
+    float: left;
+    z-index: 9
+}
+
+.faux-ui-facia:nth-child(1):checked+.slide {
+    opacity: 1
+}
+
+.faux-ui-facia:nth-child(1):checked~.faux-ui-facia {
+    float: left;
+    z-index: 8
+}
+
+.faux-ui-facia:nth-child(1):checked~.faux-ui-facia+.slide {
+    opacity: 0
+}
+
+.faux-ui-facia:nth-child(1):checked~.faux-ui-facia:checked {
+    z-index: 9
+}
+
+.faux-ui-facia:nth-child(1):checked~.faux-ui-facia:checked+.slide {
+    opacity: 1
+}
+
+.intro {
+    padding: 80px 0 60px;
+    text-align: center;
+    color: #fff;
+    margin: auto;
+    width: 800px;
+}
+
+.intro .intro__title {
+    font-weight: 200;
+    font-size: 32px;
+    color: #fff
+}
+
+.intro .intro__body {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    opacity: .48;
+    padding: 0 160px;
+    margin: 0
+}
+
+/*图片的放大速度*/
+
+.circulation img {
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+/*鼠标滑过时变大*/
+
+/*.circulation img:hover{
+transform: scale(1.05);
+}*/
+
+/*滑动代码结束*/
+
+/*右边的代码*/
+
+.circulation_right {
+    width: 280px;
+    height: 295px;
+    float: right;
+    background: white;
+    margin: 0 auto;
+}
+
+.circulation_right ul {
+    background: url(../picture/biaozhi1.jpg) no-repeat 20px 4px;
+}
+
+.circulation_right a {
+    color: #1f2e4c;
+    font-size: 16px;
+    ;
+    padding-left: 15px;
+}
+
+.circulation_right li {
+    width: 260px;
+    padding-left: 19px;
+    border: 1px solid;
+    border-color: rgb(221, 221, 221);
+    height: 70px;
+    display: inline-block;
+}
+
+.circulation_right a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*撞击球特效*/
+
+.ball {
+    z-index: 12;
+    /* 元素叠加越高排的越前*/
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+}
+
+.face {
+    position: absolute;
+    z-index: -1;
+    width: 40px;
+    height: 40px;
+    background: RGBA(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.face .eye {
+    width: 5px;
+    height: 5px;
+    background: RGBA(0, 0, 0, 0.5);
+    position: absolute;
+    top: 40%;
+}
+
+.face .eye.right {
+    right: 20%;
+}
+
+.face .eye.left {
+    right: 60%;
+}
+
+.face .mouth {
+    position: absolute;
+    width: 10%;
+    height: 2px;
+    background: RGBA(0, 0, 0, 0.5);
+    top: 70%;
+    left: 50%;
+}
+
+.smoke {
+    position: absolute;
+    transform: translateX(-50%) translateY(-50%);
+    background: white;
+    border-radius: 50%;
+    z-index: 100;
+}
+
+/*左边下面的代码*/
+
+.content_1 {
+    width: 1191px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.content_1_left {
+    height: 883px;
+    width: 291px;
+    float: left;
+}
+
+.content_1_left img {
+    margin-top: 0px;
+    float: left;
+}
+
+/*上半部分*/
+
+.content_1_left_top {
+    width: 290px;
+    height: 390px;
+    background: white;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+}
+
+/*时钟图标开始*/
+
+.content_1_left_top_title img {
+    float: left;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+/*opening Hours*/
+
+.content_1_left_top_title1 {
+    float: left;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-left: 10px;
+    color: rgb(85, 85, 85);
+}
+
+/*左边的字体内容*/
+
+.content_1_left_content {
+    display: inline-block;
+    width: 232px;
+    height: 260px;
+    color: #555;
+    text-align: left
+}
+
+/*底部Learn more 开始*/
+
+.content_1_left_bottom {
+    float: left;
+    padding-left: 30px;
+}
+
+.content_1_left_bottom a {
+    color: rgb(90, 122, 234);
+}
+
+.content_1_left_bottom a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content_1_left_bottom img {
+    float: right;
+}
+
+/*左边中部*/
+
+.content_1_center {
+    width: 290px;
+    height: 500px;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+    background-color: rgb(251, 251, 251);
+}
+
+.content_1_center_title {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 15px;
+    color: gray;
+}
+
+/*下边导航部分*/
+
+.content_1_center_nov {
+    width: 222px;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+.content_1_center_nov a {
+    color: rgb(90, 122, 234);
+}
+
+.content_1_center_nov a:hover {
+    color: white;
+}
+
+.content_1_center_nov li {
+    float: left;
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(220, 220, 220);
+}
+
+.content_1_center_nov li:hover {
+    background: rgb(90, 122, 234);
+}
+
+/*导航下内容*/
+
+.content_1_center_text {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: rgb(85, 114, 116);
+    width: 252px;
+    height: 132px;
+}
+
+/*左边最下边*/
+
+.content_1_bottom {
+    width: 290px;
+    height: 240px;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+    background-color: white;
+}
+
+.content_1_bottom_title {
+    text-align: left;
+    padding-top: 20px;
+    font-size: 18px;
+    padding-left: 20px;
+    color: rgb(85, 114, 116);
+    float: left;
+}
+
+.content_1_bottom_more img {
+    float: right;
+}
+
+.content_1_bottom_more {
+    padding-left: 30px;
+    padding-top: 25px;
+    float: left;
+}
+
+.content_1_bottom_more a {
+    color: rgb(90, 122, 234);
+}
+
+.content_1_bottom_more a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content_1_bottom_text {
+    width: 242px;
+    height: 150px;
+    padding-top: 20px;
+    float: left;
+    font-size: 14px;
+    color: rgb(85, 114, 116);
+    padding-left: 20px;
+}
+
+/*左边部分结束*/
+
+/*中间部分开始*/
+
+.content_2_center {
+    height: 883px;
+    width: 291px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.content_2_center_top img {
+    float: left;
+}
+
+.content_2_center_title {
+    width: 287px;
+    height: 360px;
+    background: rgb(255, 253, 243);
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    font-size: 14px;
+    float: left;
+}
+
+/*放大镜的代码*/
+
+.content_2_center_title1 img {
+    float: left;
+    padding-left: 15px;
+    padding-top: 18px;
+}
+
+.content_2_center_title2 {
+    font-size: 21px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: rgb(85, 85, 85);
+    padding-bottom: 10px;
+}
+
+.content_2_center_content {
+    width: 227px;
+    height: 240px;
+    background: white;
+    display: inline-block;
+    text-align: left;
+    padding-top: 10px;
+    color: #555;
+    background-color: rgb(255, 253, 243);
+}
+
+.content_2_center_bottom {
+    float: left;
+    padding-left: 30px;
+}
+
+.content_2_center_bottom a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content_2_center_bottom img {
+    float: right;
+}
+
+.content_2_center_bottom a {
+    color: rgb(90, 122, 234);
+}
+
+/*中间的中间部分*/
+
+.content_2_top {
+    width: 287px;
+    height: 572px;
+    background: white;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    background: rgb(255, 250, 223);
+    float: left;
+}
+
+.content_2_top_content {
+    margin: 0 auto;
+    width: 287px；
+}
+
+.content_2_top_content li {
+    width: 252px;
+    height: 100px;
+    text-align: left;
+    border-bottom: 1px solid;
+    border-color: rgb(230, 230, 230);
+    padding-left: 24px;
+    padding-top: 35px;
+    
+}
+
+.content_2_top_content ul {
+    background: url(../picture/biaozhi1.jpg) no-repeat 10px 40px;
+    /* padding-top: 10px;
+    padding-left: 10px; */
+}
+
+.content_2_top_content a {
+    font-size: 15px;
+    text-align: left;
+    color: rgb(90, 122, 234);
+    /* margin-top: 20px; */
+}
+
+.content_2_top_content a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/*中间内容的右边正式开始*/
+
+.content3_right_box {
+    height: 976px;
+    width: 287px;
+    text-align: center;
+    background: white;
+    float: left;
+    margin-left: 10px;
+}
+
+.content3_right_top img {
+    float: left;
+}
+
+.content_3_right_title {
+    width: 287px;
+    height: 369px;
+    background: rgb(241, 251, 255);
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    font-size: 14px;
+    float: left;
+}
+
+.content_3_right_title1 img {
+    float: left;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.content_3_right_title2 {
+    font-size: 21px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: rgb(85, 85, 85);
+    padding-bottom: 10px;
+}
+
+/*右边的内容*/
+
+.content_3_right_content {
+    display: inline-block;
+    width: 232px;
+    height: 260px;
+    color: #555;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.content_3_right_bottom {
+    float: left;
+    padding-left: 30px;
+}
+
+.content_3_right_bottom a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content_3_right_bottom img {
+    float: right;
+}
+
+.content_3_right_bottom a {
+    color: rgb(90, 122, 234);
+}
+
+/*右边下面第二个的内容*/
+
+.content_3_right_top_content {
+    width: 287px;
+    height: 600px;
+    background: white;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+    background: rgb(227, 247, 255);
+    float: left;
+}
+
+.content_3_right_top_content1 {
+    margin: 0 auto;
+}
+
+.content_3_right_top_content1 li {
+    width: 252px;
+    height: 100px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content_3_right_top_content1 ul {
+    /* padding-left: 0px; */
+    background: url(../picture/biaozhi1.jpg) no-repeat 20px 4px;
+}
+
+.content_3_right_top_content1 a {
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    padding-left: 15px;
+}
+
+.content_3_right_top_content1 ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.content_3_right_top_content2 li {
+    width: 252px;
+    height: 40px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.content_3_right_top_content2 a {
+    font-size: 14px;
+    text-align: left;
+    color: rgb(90, 122, 234);
+}
+
+.content_3_right_top_content2 ul li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.content_3_right_top_content2 ul {
+    padding-left: 20px;
+    background: url(../picture/biaozhi1.jpg) no-repeat 20px 4px;
+}
+
+.content_3_right_top_content3 a {
+    color: rgb(90, 122, 234);
+    padding-right: 0px;
+    font-size: 20px;
+}
+
+.content_3_right_top_content3 li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content_3_right_top_content3 a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content_3_right_top_content4 a {
+    color: rgb(90, 122, 234);
+    padding-right: 0px;
+    font-size: 20px;
+}
+
+.content_3_right_top_content4 li {
+    padding-right: 89px;
+    padding-bottom: 10px;
+}
+
+.content_3_right_top_content4 ul li a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/*右边结束*/
+
+/*最右边开始*/
+
+/*/上半部分*/
+
+.content3_right_box2 {
+    float: left;
+    background:#E3F7FF;
+    width: 285px;
+    height: 660px;
+    margin-left: 15px;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+}
+
+.content3_right_box2_top {
+    width: 280px;
+    height: 660px;
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    /* border: 1px solid; */
+    /* border-color: rgb(230, 230, 230); */
+    /* background: #a5e3ff21; */
+}
+
+.content3_right_box2_top li {
+    /* margin-top: 10px; */
+    /* padding-left: 20px; */
+    width: 280px;
+    height: 100px;
+    /* padding-top: 10px; */  
+     margin:0 0 0 5px;
+}
+
+.content3_right_box2_top ul li a:hover {
+    text-decoration: underline;
+    color: red;
+    
+}
+
+.content3_right_box2_top a {
+    font-size: 15px;
+    color: rgb(90, 122, 234);
+    margin:0 0 0 15px;
+}
+
+.content3_right_box2_top ul {
+    background: url(../picture/biaozhi1.jpg) no-repeat 0px 4px;
+    width:287px;
+    height:100px;
+}
+
+/*结束*/
+
+/*下半部分*/
+
+.content3_right_box2_bottom {
+    width: 280px;
+    height: 400px;
+    display: inline-block;
+    text-align: left;
+    border: 1px solid;
+    border-color: rgb(230, 230, 230);
+}
+
+.content3_right_box2_bottom a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.content3_right_box2_bottom a {
+    font-size: 15px;
+    color: rgb(90, 122, 234);
+}
+
+.content3_right_box2_bottom li {
+    margin-top: 10px;
+    padding-left: 20px;
+    width: 210px;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.content3_right_box2_bottom ul {
+    background: url(picture/biaozhi.jpg) no-repeat 3px 25px;
+}
+
+/*最底部分开始*/
+
+.last_bottom {
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+}
+
+.last_bottom_content {
+    width: 1450px;
+    height: 100px;
+    display: inline-block;
+    /*  	 background: pink;*/
+    /*height: 200px;*/
+    text-align: left;
+    /* margin-top: 40px; */
+    background-color: #1f2e4c;
+}
+
+.last_bottom_content_left {
+    width: 340px;
+    height: 100px;
+    float: left;
+    font-size: 18px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left a {
+    font-size: 18px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left a:hover {
+    text-decoration: underline;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left img {
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.font {
+    float: left;
+    color: white;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.font1 {
+    float: left;
+    color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/*左边信息的代码*/
+
+.last_bottom_content_left1 {
+    width: 300px;
+    height: 100px;
+    float: left;
+    margin-left: 240px;
+}
+
+.last_bottom_content_left1_top {
+    font-size: 25px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left1_bottom a {
+    font-size: 16px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left1_bottom a:hover {
+    text-decoration: underline;
+    color: #c4cff2;
+}
+
+.last_bottom_content_left1_bottom li {
+    width: 300px;
+    height: 30px;
+}
+
+/*中间信息的代码*/
+
+.last_bottom_content_center {
+    float: left;
+    width: 300px;
+    height: 100px;
+    padding-left: 100px;
+}
+
+.last_bottom_content_center_top {
+    font-size: 25px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_center_bottom a {
+    font-size: 16px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_center_bottom a:hover {
+    text-decoration: underline;
+    color: #c4cff2;
+}
+
+.last_bottom_content_center_bottom li {
+    width: 300px;
+    height: 30px;
+}
+
+/*右边信息的代码*/
+
+.last_bottom_content_right {
+    float: left;
+    width: 300px;
+    height: 100px;
+    padding-left: 150px;
+}
+
+.last_bottom_content_right_top {
+    font-size: 25px;
+    color: #c4cff2;
+}
+
+.last_bottom_content_right_bottom li {
+    width: 300px;
+    height: 30px;
+}
+
+.last_bottom_content_right_bottom {
+    font-size: 18px;
+    color: #c4cff2;
+}
+.content3_right_box2_topic {
+   width: 180px;
+   height: 24px;
+}
+.ul_top{
+    background-color: #a5e3ff21;
+}
+.ul_top li{
+ height:50px;
+ width:270px;
+ text-align: center;
+ padding-top:20px;
+}
+.ul_top a{
+    font-size: 20px;
+    color: rgb(90, 122, 234);
+    
+}
+.ul_top ul{
+    background: none;
+    width: 0px;
+    height: 80px;;
+}

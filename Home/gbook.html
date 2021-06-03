@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>留言板</title>
+	<link rel="stylesheet" type="text/css" href="../Home/css/gbook.css">
+	<link href="css/font-awesome_m.min.css" rel="stylesheet">
+    <link href="css/bootstrap_m.min.css" rel="stylesheet">
+    <link href="css/templatemo_m-style.css" rel="stylesheet">
+</head>
+<style>
+
+</style>
+<body style="background: white">
+<div class="home">
+		<div class="home1">
+			<ul>
+				<a href="../Home/index.html">
+					<li class=active>返回主页</li>
+				</a><a href="../Home/resume.html">
+					<li>我的个人简历</li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="gbook">
+		<div class="topic"><h1>留言板</h1></div>
+		<form action="../admin/gbook.php" method="post">
+			<div class="content">
+			  <div class="title">你想对我说什么吗？</div>
+				<textarea name="content" id="contern" cols="50" rows="5" maxlength="40" placeholder="只能在这里输入不超过40个字哦" required="true"></textarea>
+                留言用户：<input type="text" name="user" maxlength="10" required="true">
+				      <div class="submit"><input type="submit" value="留言" style="width:30px"></div>
+				 </div>
+			
+		</form>
+	</div> -->
+	<div class="topic" style="margin-top: 150px;"><h1><font style="color: #39ADB4">留言板</font></h1></div>
+	<div class="templatemo-flex-row flex-content-row" style="width: 50% ;margin: 0 auto; "  >
+		<div class="col-1">
+		  <div class="panel panel-default margin-10">
+			<div class="panel-heading"><h2 class="text-uppercase">每日格言</h2></div>
+			<div class="panel-body">
+			  <form action="../admin/gbook.php" class="templatemo-login-form" method="post">
+				<div class="form-group">
+				  <label for="inputEmail">留言人</label>
+					<input type="text" class="form-control" id="inputEmail" placeholder="留言人" style="height:30px; width: 200px;" name="user"  required="true"autocomplete="off">
+					</div>
+					<div class="form-group">
+					<label for="inputEmail">留下你的声音</label>
+					<textarea type="text" class="form-control" id="inputEmail" placeholder="可以在这里填写留言哦" style="height:100px;" name="content"  required="true"></textarea>
+					<div class="form-group" style="text-align:center">
+						<button type="submit" class="templatemo-blue-button" >留言</button>
+				  </div>
+				</form>
+				</div>
+			   
+
+</body>
+ 
+</html>
